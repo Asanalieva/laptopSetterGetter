@@ -1,9 +1,11 @@
 package com.company;
 
+import java.awt.*;
+
 public class Laptop {
     public String laptopName;
     public int memory;
-    public String color;
+    public Color color;
     public String cpu;//processor
 
     void turnOn(){
@@ -26,10 +28,10 @@ public class Laptop {
     public void setMemory(int memory){
         this.memory = memory;
     }
-    public String getColor(){
+    public Color getColor(){
         return color;
     }
-    public void setColor(String color){
+    public void setColor(Color color){
         this.color = color;
     }
 
