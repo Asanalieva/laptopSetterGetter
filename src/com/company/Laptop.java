@@ -8,11 +8,22 @@ public class Laptop {
     public Color color;
     public String cpu;//processor
 
+    public void showInfo(){
+        System.out.println(".......................................");
+        System.out.println("INFO ABOUT LAPTOP");
+        System.out.println("LaptopName - " + laptopName);
+        System.out.println("Laptop memory - " + memory);
+        System.out.println("Laptop color - " + color);
+        System.out.println("Laptop CPU - " + cpu);
+        System.out.println("........................................");
+    }
+
+
     void turnOn(){
-        System.out.println("Turned on!");
+        System.out.println(getLaptopName()+"Turned on!");
     }
     void shutDown(){
-        System.out.println("Shut down!");
+        System.out.println(getLaptopName() + "Shut down!");
     }
 
     public String getLaptopName(){
